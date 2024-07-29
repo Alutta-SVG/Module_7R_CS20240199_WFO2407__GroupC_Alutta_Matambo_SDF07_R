@@ -3,13 +3,119 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>DevJane Portfolio Website</title>
+        <title>Alutta Portfolio Website</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
-
+        <link rel="stylesheet" href="css/style.css">
 
     </head>
     <body>
-        
+        <header>
+            <div class="logo">
+                <img src="images/Screenshot_27-7-2024_132435_app.brandmark.io.jpeg" alt="">
+            </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#services" class="nav__link">My_Services</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About_me</a></li>
+                    <li class="nav__items"><a href="#work" class="nav__link">My_work</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!--introduction-->
+        <section class="intro" id="home">
+            <h1 class="section__title section__title--intro">
+                Hi, i am <strong> Alutta Matambo</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">Front-end dev</p>
+            <img src="images/alutta.jpg.jpg" alt="" class="intro__img">
+        </section>
+
+
+        <!--My services-->
+        <section class="My_services" id="services">
+            <h2 class="section__title section__title--services">What I do</h2>
+            <div class="services">
+                <h3>Design</h3>
+                <p> I am ver proficient in UI and UX design.</p>
+            </div>
+
+            <div class="services">
+                <h3>Development</h3>
+                <p>I build and develop apps and websites</p>
+            </div>
+
+            <div class="services">
+                <h3>javascript</h3>
+                <p>I am very proficient in the javascript language.</p>
+            </div>
+            <a href="#work"class="btn"> My_work </a>
+        </section>
+
+
+        <!--aboutme-->
+        <section class="About_me" id="about">
+            <h2 class="section__title section__title--about">Who I am</h2>
+            <p class="sectiom__subtitle section__subtitle--about"> Designer and developer based in cape town south africa</p>
+
+            <div class="About_me__body">
+                <p>I am a front developer based in cape town. i have studied at the codespace academy. Before
+                    from that i have familiarised myself with the fundamentals of html.I am very
+                    passionateb about coding and i enjoy doing it.
+                </p>
+            </div>
+            <img src="images/IMG-20230110-WA0004.jpg" alt="" class="About_me__img">
+        </section>
+
+
+        <!--my work-->
+        <section class="My_work" id="work">
+        <h2 class="section__title section__title--work">My Work</h2>
+        <p class="section__subtitle section__title--work">A selection of my range of work</p>
+
+        <div class="portfolio">
+            <!--portfolio item 01-->
+            <a href="portfolio-item.html" class="portfolio__item">
+                <img src="images/portfolio piece-02.jpeg" alt="" class="portfolio__img">
+            </a>
+            <a href="portfolio-item.html" class="portfolio__item">
+                <img src="images/portfolio piece-03.jpeg" alt="" class="portfolio__img">
+            </a>
+            <a href="portfolio-item.html" class="portfolio__item">
+                <img src="images/portfolio piece -04.jpeg" alt="" class="portfolio__img">
+            </a>
+        </div>
+    </section>
+     <!--footer-->
+     <footer class="footer">
+        <a href="mailto:AluttaMatambo5@gmail.com" class="footer__link">Aluttamatambo5@gmail.com</a>
+        <ul class="social-list__item">
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://codepen.io">
+                    <i class="fab fa-dribbble"></i>
+                </a>
+            </li>
+            <li class="social-list__item">
+             <a class="social-list__link" href="https://linkedin.com">
+                <i class="fa-brands fa-linkedin"></i>
+             </a>
+            </li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://github.com/Alutta-svg">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+
+            </li>
+        </ul>
+     </footer>
+
+     <script src="js/index.js"></script>
     </body>
 </html>
+
+  
