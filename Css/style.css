@@ -38,7 +38,9 @@
 
 /*general styles*/
 
-
+html{
+    scroll-behavior: smooth;
+}
 
 body {
     background: var(--clr-light);
@@ -65,19 +67,22 @@ strong { font-weight: var(--fw-bold) }
     outline-offset: 3px;
 }
 
+button {
+    align-self: center;
+}
+
 .btn {
     display:inline-block;
-    padding: .5em 2,5em;
+    padding: .5em 3.5em;
     background: var(--clr-powderblue);
     color: var(--clr-dark);
     text-decoration: none;
-    cursor: pointer;
+    cursor:pointer;
     font-size: .8rem;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: var(--fw-bold);
     transition: transform 200ms ease-in-out;
-    text-align: center;
 }
 
 .btn:hover {
@@ -159,6 +164,7 @@ header {
     right: 0;
     z-index: 100;
 
+
     transform: translateX(100%);
     transition: transform 250ms cubic-bezier(.5, 0 ,.5 ,1);
 }
@@ -225,7 +231,7 @@ header {
 .hamburger,
 .hamburger::before,
 .hamburger::after {
-    background: var(--clr-palevioletred);
+    background: var(--clr-powderblue);
     width: 2em;
     height: 3px;
     border-radius: 1em;
@@ -378,13 +384,12 @@ header {
 
 .My_work {
     background-color: var(--clr-dark);
-    color: var(--clr-light);
-
+    color: var(--clr-dark);
+    text-align: center;
 }
-
-.portfolio__item {
-    background: var(--clr-powderblue);
-    overflow: hidden;
+.portfolio {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .portfolio__img {
