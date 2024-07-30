@@ -67,19 +67,21 @@ strong { font-weight: var(--fw-bold) }
     outline-offset: 3px;
 }
 
-button {
-    align-self: center;
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.btn {
+.btn{
     display:inline-block;
-    padding: .5em 3.5em;
+    padding:.5em;
     background: var(--clr-powderblue);
     color: var(--clr-dark);
     text-decoration: none;
     cursor:pointer;
     font-size: .8rem;
-    text-transform: uppercase;
+    text-transform:uppercase;
     letter-spacing: 2px;
     font-weight: var(--fw-bold);
     transition: transform 200ms ease-in-out;
@@ -296,6 +298,8 @@ header {
 /* my services section*/
 
 .services {
+    display:flex;
+    flex-direction: row;
     background-color: var(--clr-dark);
     background-image: url(../images/pexels-jakubzerdzicki-20044801.jpg);
     background-size:auto;
@@ -310,7 +314,8 @@ header {
 
 .section__title--services::after{
     content: '';
-    display: block;
+    display: flex;
+    flex-direction: row;
     width: 2em;
     height: 1px;
     margin: 0.5em auto 1em;
@@ -327,19 +332,16 @@ header {
     margin: 0 auto;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 800px){
     .services {
-        display: flex;
+        display:flex;
+        flex-direction:row;
+        justify-content: center;
+        align-items: center;
         max-width: 1000px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .services + .services {
-        margin-left: 2em;
     }
 }
-
+ 
 .About_me {
     max-width: 1000px;
     margin: 0 auto;
@@ -464,7 +466,18 @@ header {
 }
 
 .portfolio-item-individual p {
-    max-width: 600px;
+    max-width: 200px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.portfolio-item-individual{
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 0 2em 2em;
+}
+
+.portfolio__link {
+   height:50%;
+   width: 100px;
 }
